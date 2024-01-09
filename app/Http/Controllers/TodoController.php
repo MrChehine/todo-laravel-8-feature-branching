@@ -15,12 +15,18 @@ class TodoController extends Controller
 
     public function store(Request $request)
     {
-
+        $attributes = $this->validate($request, [
+            "title"=> "required",
+            "description"=> "nullable"
+        ]);
+        $todo = Todo::create($attributes);
+        return redirect()->route("index");
     }
 
     public function update(Request $request, Todo $todo)
     {
-
+        $todo->update(["isDone" => !$todo->isDone]);
+        return redirect()->route("index");
     }
 
     public function destroy(Todo $todo)
