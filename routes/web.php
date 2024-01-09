@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::post('/', [TodoController::class,'store'])->name('store');
+Route::patch('/{todo}', [TodoController::class,'update'])->name('update');
