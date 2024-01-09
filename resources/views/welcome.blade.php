@@ -25,6 +25,23 @@
                 TODOs
             </h1>
 
+            <div class="mb-6">
+                <form class="flex flex-col space-y-4" action="/" method="POST">
+                    @csrf
+                    <input type="text"
+                           name="title"
+                           id="title"
+                           placeholder="Todo title"
+                           class="py-3 px-4 bg-gray-100 rounded-xl">
+
+                    <textarea name="description"
+                              id="description"
+                              placeholder="Todo description"
+                              class="py-3 px-4 bg-gray-100 rounded-xl"></textarea>
+
+                    <button class="w-28 py-4 px-8 bg-green-500 text-white rounded-xl">Add</button>
+                </form>
+            </div>
 
         </div>
     </body>
