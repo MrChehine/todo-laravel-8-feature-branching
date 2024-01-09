@@ -13,7 +13,7 @@ This repository is made for practice purpose. It's about a simulation of one of 
 
 The branches are kept undeleted to provide history (to understand the evolution of the codebase), and make it easier for viewers to review the changes.
 
-- Feature Branching (GitHub Flow) ⏳
+- Feature Branching (GitHub Flow) ✅
 - [Release Branching](https://github.com/MrChehine) 🔜
 - [Git Flow](https://github.com/MrChehine) 🔜
 
